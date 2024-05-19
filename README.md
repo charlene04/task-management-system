@@ -1,5 +1,14 @@
 # Task Management System API
 
+## Description
+This project is built to allow users to create multiple tasks with varying priorities in order to facilitate effective management.
+Here are the premises it is basaed on:
+
+- A particular user can create multiple tasks
+- A particular user can ONLY browse through/update the tasks they created
+- Multiple clients (terminal) can connect to a websocket endpoint to view live data of currently available tasks (this needs improvements as stated [here](https://github.com/charlene04/task-management-system#connecting-a-web-socket-client))
+
+
 ## Project Setup
 ### Prerequisites
 Before you begin, ensure you have the following installed on your local machine:
