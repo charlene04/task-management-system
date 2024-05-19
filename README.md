@@ -30,7 +30,9 @@ $ GRANT ALL PRIVILEGES ON DATABASE your_database_name TO your_username;
 
 ```
 
-- Go ahead to clone the repository onto your machine and `cd` into the project
+### Go ahead to clone the repository onto your machine and `cd` into the project
+
+
 
 ### Preparing the .env File
 Create a `.env` file in the root directory of the project and add the following environment variables:
