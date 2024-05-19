@@ -92,7 +92,7 @@ Actions that publishes events include:
 
 Possible Improvements:
 - On the websokcet level, clients should be distinguihable based on which user's tasks they want to stream.
-- There should also be some kind of validation before a client is added (maybe some sort of required secret key before a client can be added)
+- There should also be some kind of validation before a client is added (maybe some sort of required secret key before a client can be added), with this, the user of interest can be ascertained and the related tasks will be published to the clients on connection, removing the need for the user (tasks creator) to be logged in first.
 
 
 ### DATA MODELS, API ENDPOINTS AND POSTMAN COLLECTION
