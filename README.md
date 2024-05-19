@@ -63,10 +63,27 @@ $ npm run start
 
 # watch mode
 $ npm run start:dev
-
-# production mode
-$ npm run start:prod
 ```
+
+
+### Connecting a web socket client
+The project will be using terminal as a client (any termianl should do). So open a new terminal and `cd` into the project. Then run the follwoing commands:
+
+```bash
+$ npm install socket.io-client
+$ node terminal-client.js
+```
+You should see a message depicting successful connection as long as the app server is up and running. The opposite is also true.
+
+Actions that publishes events include:
+- On Login: All tasks created by the logged in user is publised
+- On task creation: updated tasks data is published
+- On Task update: updated tasks data is published
+- On task delete: updated tasks data is published
+
+Possible Improvements:
+- On the websokcet level, clients should be distinguihable based on which user's tasks they want to stream.
+- There should also be some kind of validation before a client is added (maybe some sort of required secret key before a client can be added)
 
 
 ### DATA MODELS, API ENDPOINTS AND POSTMAN COLLECTION
