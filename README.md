@@ -21,12 +21,13 @@ Open your PostgreSQL terminal (psql) or use a GUI tool like pgAdmin.
 - Run the following commands to create a new database and user:
 
 ```bash
+-- Create database
 $ CREATE DATABASE your_database_name;
+
+-- Create user and grant privileges
 $ CREATE USER your_username WITH PASSWORD 'your_password';
-$ ALTER ROLE your_username SET client_encoding TO 'utf8';
-$ ALTER ROLE your_username SET default_transaction_isolation TO 'read committed';
-$ ALTER ROLE your_username SET timezone TO 'UTC';
 $ GRANT ALL PRIVILEGES ON DATABASE your_database_name TO your_username;
+
 ```
 
 - Go ahead to clone the repository onto your machine and `cd` into the project
