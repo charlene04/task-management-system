@@ -5,6 +5,7 @@ import { AuthModule } from './modules/auth/auth.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { join } from 'path';
 import * as dotenv from 'dotenv';
+import { WebsocketModule } from './modules/websocket/websocket.module';
 
 dotenv.config();
 
@@ -23,6 +24,7 @@ dotenv.config();
     }),
     TaskModule,
     AuthModule,
+    WebsocketModule,
   ],
   controllers: [AppController],
 })

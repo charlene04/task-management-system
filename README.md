@@ -4,7 +4,7 @@
 ### Prerequisites
 Before you begin, ensure you have the following installed on your local machine:
 
-- Node.js
+- Node.js (v18)
 - npm (Node Package Manager)
 - PostgreSQL
 

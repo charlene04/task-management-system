@@ -18,4 +18,4 @@ dotenv.config();
   providers: [JwtAuthGuard],
   exports: [JwtModule, JwtAuthGuard],
 })
-export class SharedJwtModule {}
+export class SharedModule {}

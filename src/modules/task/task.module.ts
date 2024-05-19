@@ -3,12 +3,18 @@ import { TaskService } from './task.service';
 import { TaskController } from './task.controller';
 import { Task } from '../../entities/task.entity';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { SharedJwtModule } from '../shared/jwt.module';
+import { SharedModule } from '../shared/shared.module';
 import { User } from '../../entities/user.entity';
+import { WebsocketModule } from '../websocket/websocket.module';
 
 @Module({
-  imports: [TypeOrmModule.forFeature([Task, User]), SharedJwtModule],
+  imports: [
+    TypeOrmModule.forFeature([Task, User]),
+    SharedModule,
+    WebsocketModule,
+  ],
   providers: [TaskService],
   controllers: [TaskController],
+  exports: [TaskService],
 })
 export class TaskModule {}
